@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Faculty List</h2>
+<table class="faculty-table">
+  <thead><tr><th>ID</th><th>Name</th><th>Department</th><th>Email</th><th>Role</th><th>Action</th></tr></thead>
+  <tbody>
+    {% for f in faculties %}
+    <tr>
+      <td>{{ f.id }}</td>
+      <td>{{ f.name }}</td>
+      <td>{{ f.department }}</td>
+      <td>{{ f.email }}</td>
+      <td>{{ f.role }}</td>
+      <td>
+        <form method="post" action="{{ url_for('delete_faculty', fid=f.id) }}" onsubmit="return confirm('Delete faculty?');">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    {% else %}
+    <tr><td colspan="6">No faculty found.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

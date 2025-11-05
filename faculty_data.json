@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. A. Sharma",
+    "department": "Physics",
+    "email": "asharma@example.com",
+    "role": "Admin"
+  },
+  {
+    "id": 2,
+    "name": "Ms. R. Patel",
+    "department": "Chemistry",
+    "email": "rpatel@example.com",
+    "role": "Faculty"
+  }
+]

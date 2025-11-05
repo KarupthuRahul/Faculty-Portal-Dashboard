@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f7f7f8; color:#222 }
+.topbar { background:#2b6cb0; color:white; padding:12px 20px }
+.topbar h1 { margin:0; font-size:20px; display:inline-block }
+.topbar nav { float:right; margin-top:4px }
+.topbar a { color:rgba(255,255,255,0.9); text-decoration:none; margin-left:12px }
+.container { padding:20px; max-width:900px; margin:20px auto; background:white; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.06) }
+.faculty-table { width:100%; border-collapse:collapse }
+.faculty-table th, .faculty-table td { padding:8px 10px; border-bottom:1px solid #eee; text-align:left }
+.form input, .form select { padding:6px; width:100%; max-width:400px }
+.flashes { list-style:none; padding:0; margin:8px 0 12px 0 }
+.flashes li { background:#e6fffa; border-left:4px solid #38a169; padding:8px; margin-bottom:6px }
+.footer { text-align:center; font-size:12px; color:#666; padding:12px }

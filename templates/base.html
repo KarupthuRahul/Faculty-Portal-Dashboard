@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Faculty Portal Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header class="topbar">
+  <h1>Faculty Portal Dashboard</h1>
+  <nav><a href="{{ url_for('index') }}">Home</a> • <a href="{{ url_for('add_faculty') }}">Add Faculty</a></nav>
+</header>
+<main class="container">
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class="flashes">
+        {% for m in messages %}<li>{{ m }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  {% block content %}{% endblock %}
+</main>
+<footer class="footer">Made for demo — Faculty Portal Dashboard</footer>
+</body>
+</html>
